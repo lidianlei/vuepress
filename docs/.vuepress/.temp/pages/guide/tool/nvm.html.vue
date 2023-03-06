@@ -1,0 +1,34 @@
+<template><div><h1 id="nvm" tabindex="-1"><a class="header-anchor" href="#nvm" aria-hidden="true">#</a> nvm</h1>
+<h2 id="安装配置" tabindex="-1"><a class="header-anchor" href="#安装配置" aria-hidden="true">#</a> 安装配置</h2>
+<p><a href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener noreferrer">nvm (opens new window)<ExternalLinkIcon/></a>是 node 版本管理工具为了解决 node 各种版本存在不兼容现象，让你在同一台机器上安装和切换不同版本的 node 的工具</p>
+<h3 id="windows" tabindex="-1"><a class="header-anchor" href="#windows" aria-hidden="true">#</a> Windows</h3>
+<p>下载安装 <a href="https://github.com/coreybutler/nvm-windows" target="_blank" rel="noopener noreferrer">nvm-windows<ExternalLinkIcon/></a></p>
+<h2 id="常用命令" tabindex="-1"><a class="header-anchor" href="#常用命令" aria-hidden="true">#</a> 常用命令</h2>
+<p>获得帮助</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvm <span class="token parameter variable">-h</span> 
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看版本</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvm <span class="token parameter variable">-v</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看/设置根路径</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvm root <span class="token punctuation">[</span>path<span class="token punctuation">]</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看全部安装版本</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvm list
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看全部可安装版本</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvm list available
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>安装指定版本Node.js</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvm <span class="token function">install</span> <span class="token operator">&lt;</span>version<span class="token operator">></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>卸载指定版本Node.js</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvm uninstall <span class="token operator">&lt;</span>version<span class="token operator">></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>切换指定版本Node.js</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvm use <span class="token operator">&lt;</span>version<span class="token operator">></span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看当前使用的Node.js版本</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvm current
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>查看本地已安装的 node 版本，同时也会显示当前使用的 node 版本</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code>nvm list
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="常见问题" tabindex="-1"><a class="header-anchor" href="#常见问题" aria-hidden="true">#</a> 常见问题</h2>
+<p>如果之前使用 npm 安装过扩展包，现在想使用 NVM 进行管理。则首先需要从全局中删除 node_modules 目录</p>
+<div class="language-bash line-numbers-mode" data-ext="sh"><pre v-pre class="language-bash"><code><span class="token comment"># 查看全局 node_modules 目录</span>
+<span class="token function">npm</span> root <span class="token parameter variable">-g</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><pre v-pre class="language-text"><code>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div></div></template>
+
+
