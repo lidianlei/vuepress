@@ -57,6 +57,10 @@ export default defineUserConfig({
         text: 'Git',
         link: '/guide/git/git',
       },
+      {
+        text: 'TypeScript',
+        link: '/guide/ts/config',
+      },
     ],
     sidebar: {
       "/guide/html": [
@@ -110,6 +114,18 @@ export default defineUserConfig({
       ],
       "/guide/git": [
         "git",
+      ],
+      "/guide/ts": [
+        "config",
+        "基础类型",
+        "配置与调试",
+        "断言",
+        "类与接口",
+        "泛型",
+        "装饰器",
+        "模块管理",
+        "webpack",
+        "类型工具",
       ],
     }
   }),
