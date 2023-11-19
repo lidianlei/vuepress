@@ -338,7 +338,7 @@ var web = "js";
 console.log(window.web); //js
 ```
 
-以往没有块任用时使用立即执行函数模拟块作用域
+以往没有`块作用域时`使用`立即执行函数`模拟块作用域
 
 ```js
 (function() {

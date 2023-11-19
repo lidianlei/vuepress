@@ -202,7 +202,7 @@ async function query() {
 query()
 ```
 
-### POST
+### POST请求
 
 发送 POST 请求需要设置请求头 Request header
 
@@ -226,7 +226,8 @@ async function post() {
 }
 post()
 ```
-#### axios
+### axios封装
+
 ```js
 export default function ajax(url = '', params = {}, type = 'GET') {
     // 1. 变量
@@ -261,6 +262,5 @@ export default function ajax(url = '', params = {}, type = 'GET') {
              reject(error);
         })
     });
-
 }
 ```

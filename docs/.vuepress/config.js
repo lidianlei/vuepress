@@ -2,7 +2,8 @@ import {defineUserConfig} from 'vuepress'
 import {docsearchPlugin} from '@vuepress/plugin-docsearch'
 import {backToTopPlugin} from '@vuepress/plugin-back-to-top'
 import {defaultTheme} from '@vuepress/theme-default'
-import { searchPlugin } from '@vuepress/plugin-search'
+import {searchPlugin} from '@vuepress/plugin-search'
+
 export default defineUserConfig({
   port: 3000,
   lang: 'zh-CN',
@@ -50,6 +51,10 @@ export default defineUserConfig({
           {
             text: 'nvm',
             link: '/guide/tool/nvm',
+          },
+          {
+            text: 'pnpm',
+            link: '/guide/tool/pnpm',
           }
         ],
       },
@@ -60,6 +65,14 @@ export default defineUserConfig({
       {
         text: 'TypeScript',
         link: '/guide/ts/config',
+      },
+      {
+        text: 'ndoeJs',
+        link: '/guide/node/config',
+      },
+      {
+        text: 'Mysql',
+        link: '/guide/mysql/baseSql',
       },
     ],
     sidebar: {
@@ -111,6 +124,7 @@ export default defineUserConfig({
         "yarn",
         "npm",
         "nvm",
+        "pnpm"
       ],
       "/guide/git": [
         "git",
@@ -127,13 +141,32 @@ export default defineUserConfig({
         "webpack",
         "类型工具",
       ],
+      "/guide/node": [
+        "config",
+        "模块管理",
+        "事件循环",
+        "Path模块",
+        "Event模块",
+        "Buffer",
+        "Stream与Pipe",
+        "FS模块",
+        "HTTP",
+        "pm2",
+        "开发扩展包",
+        "常用扩展包",
+      ],
+      "/guide/mysql":[
+        "baseSql",
+        "表维护",
+        "数据类型",
+      ]
     }
   }),
   /*插件*/
   plugins: [
     searchPlugin({
       // 配置项
-     
+
     }),
 
     backToTopPlugin(),
